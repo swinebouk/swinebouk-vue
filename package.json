@@ -1,35 +1,50 @@
 {
   "name": "swinebouk-vue",
   "version": "0.1.0",
-  "main": "index.js",
-  "repository": "git@github.com:swinebouk/swinebouk-vue.git",
-  "author": "Johnny Lee-Othon",
-  "license": "MIT",
   "private": true,
-  "devDependencies": {
-    "@vue/cli": "^3.4.0",
-    "modern-normalize": "^0.5.0",
-    "webpack": "^4.29.4",
-    "webpack-cli": "^3.2.3",
-    "webpack-dev-server": "^3.1.14",
-    "xo": "^0.24.0",
-    "yaml": "^1.3.2"
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
   },
   "dependencies": {
-    "@babel/runtime": "^7.3.1",
-    "@vue/devtools": "^4.1.5",
-    "babel": "^6.23.0",
-    "clean-webpack-plugin": "^1.0.1",
-    "css-loader": "^2.1.0",
-    "html-webpack-plugin": "^3.2.0",
-    "imports-loader": "^0.8.0",
-    "snapsvg": "^0.5.1",
-    "style-loader": "^0.23.1",
+    "lodash.debounce": "^4.0.8",
     "swinebouk-svg": "^0.1.2",
-    "to-string-loader": "^1.1.5",
-    "url-loader": "^1.1.2"
+    "vue": "^2.5.22",
+    "yaml": "^1.3.2"
   },
-  "scripts": {
-    "start": "webpack-dev-server"
-  }
+  "devDependencies": {
+    "@vue/cli": "^3.4.0",
+    "@vue/cli-plugin-babel": "^3.4.0",
+    "@vue/cli-plugin-eslint": "^3.4.0",
+    "@vue/cli-service": "^3.4.0",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.8.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "vue-template-compiler": "^2.5.21"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "rules": {},
+    "parserOptions": {
+      "parser": "babel-eslint"
+    }
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ]
 }
