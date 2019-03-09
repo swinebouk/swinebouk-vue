@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>My test page</title>
+  </head>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="http://localhost:8098"></script>
+
+    <div id="vowel-chart-app">
+      <form id="vowel-chart-source-form" v-on:submit.prevent="onSubmit($event)">
+        <textarea rows="8" cols="80" v-model="source" v-on:change="render($event)">{{ source }}</textarea>
+      </form>
+      <!-- <p><pre>{{ svgCopy }}</pre></p> -->
+      <!-- {{ svgResult }} -->
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
