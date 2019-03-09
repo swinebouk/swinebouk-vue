@@ -8,6 +8,7 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "imports-loader": "^0.8.0",
     "lodash.debounce": "^4.0.8",
     "swinebouk-svg": "^0.1.2",
     "vue": "^2.5.22",
